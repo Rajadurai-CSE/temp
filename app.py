@@ -1,8 +1,13 @@
-print('This is Raja')
-a = 55
-b = 56
-c = 10
-d = 56
-e= 67
-print(a+b+c+d+e)
-print('lint')
+from feature1 import addition
+from feature2 import subtraction
+print('simple calculator')
+print('Enter two numbers')
+a = int(input('Enter number1:'))
+b = int(input('Enter number2:'))
+print('Enter 1 for Addition and 2 for subtraction')
+c = int(input('Enter choice:'))
+
+if c==1:
+  print(addition(a,b))
+else:
+  print(subtraction(a,b))
